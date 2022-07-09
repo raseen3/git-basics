@@ -15,7 +15,7 @@ tbd
 
 ---
 
-# Setting up ssh key
+## Setting up ssh key
 
 To generate an SSH key, first open your shell in the Home Directory.
 
@@ -55,7 +55,7 @@ To see if you key works ENTER the command:
 ssh -T git@github.com
 ```
 
-and if the output is something along the lines of 
+and if the output is something along the lines of
 
 ```bash
 Hi _yourUsername_! You've successfully authenticated, but GitHub does not provide shell access
@@ -115,6 +115,14 @@ Saves/sends changes to the Remote branch hosted on GitHub
 
 use this command the first time you push a change on a branch to set the origin of your changes
 
+### git push remote --tags
+
+Pushes local changes to the remote hosted branch along with all the tags
+
+### git push origin --delete tag-name
+
+deleted specified tag
+
 ### git pull
 
 updates changes to what is saved in the Remote branch hosted on GitHub if the local branch is not up-to-date
@@ -141,11 +149,22 @@ Shows any changes between the staging area and the repository.
 
 ## git config files
 
-tbd
+can set default commit message, git aliases, and specifer git user in the `.git` and `.gitconfig` file
 
-## Team Development
+can use `.gitignore` to ignore certain files
+Example `.gitignore`:
 
-tbd
+```git
+/logs/*
+!logs/.gitkeep
+/tmp
+*.swp
+```
+
+Verify the .gitignore file exists in your project and ignore certain type
+of files, such as all files in logs directory (excluding the .gitkeep file),
+whole tmp directory and all files *.swp. File ignoring will work for the
+directory (and children directories) where .gitignore file is placed.
 
 ## Conflict Resolution & File Directory Management
 
@@ -153,9 +172,9 @@ tbd
 
 Revert your repository to a previous known working state.
 
-### git revert commit-sha
+### git revert
 
-Create a new commit, reverting changes from the specified commit.
+Create a new commit, reverting changes from the most recent commit.
 It generates an inversion of changes.
 
 ### git rm file
@@ -174,11 +193,15 @@ Apply stored stash content into working directory, and clear stash
 
 Delete a specific stash from all your previous stashes
 
+### git tag -a tag-name -m "tag message"
+
+creates a tag named tag-name with a message tied to current commit (can specify commit)
+
 ## Branches
 
 ### git checkout branch-name
 
-switches you to the specified branch
+switches you to the specified branch (can also switch you to a specified tag if that is set up)
 
 ### git checkout -b new-Branch-Name
 
@@ -190,6 +213,8 @@ merges specified branch into current working branch; assuming you are in the bra
 
 ### Other Stuff
 
- - [Git Source Control for the Impatient](https://www.youtube.com/watch?v=BaPexytJFTI&list=PLlcnQQJK8SUgfd_0XGzKveEjDGFbndmWr)
- - [Engineer Man Git Playlist](https://www.youtube.com/playlist?list=PLlcnQQJK8SUjuzpRx0U-VEUzhmJD7vGbO)
- - [Ihatetomatoes Git Tutorial Playlist](https://www.youtube.com/playlist?list=PLkEZWD8wbltmcZQaA0ism9k2E6MGRnHZ7)
+- [Git Source Control for the Impatient](https://www.youtube.com/watch?v=BaPexytJFTI&list=PLlcnQQJK8SUgfd_0XGzKveEjDGFbndmWr)
+
+- [Engineer Man Git Playlist](https://www.youtube.com/playlist?list=PLlcnQQJK8SUjuzpRx0U-VEUzhmJD7vGbO)
+
+- [Ihatetomatoes Git Tutorial Playlist](https://www.youtube.com/playlist?list=PLkEZWD8wbltmcZQaA0ism9k2E6MGRnHZ7)
