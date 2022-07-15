@@ -218,3 +218,5 @@ merges specified branch into current working branch; assuming you are in the bra
 - [Engineer Man Git Playlist](https://www.youtube.com/playlist?list=PLlcnQQJK8SUjuzpRx0U-VEUzhmJD7vGbO)
 
 - [Ihatetomatoes Git Tutorial Playlist](https://www.youtube.com/playlist?list=PLkEZWD8wbltmcZQaA0ism9k2E6MGRnHZ7)
+
+- [Learn X in Y Minutes](https://learnxinyminutes.com/docs/git/)
