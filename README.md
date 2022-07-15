@@ -99,6 +99,10 @@ saves changes to local machine
 
 Staged all files pending **addition**, **deletion**, and **modification**
 
+### git add /file
+
+stages file or directory to be committed
+
 ### git commit [Option]
 
 saves changes to local branch
