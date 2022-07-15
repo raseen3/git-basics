@@ -57,9 +57,7 @@ ssh -T git@github.com
 
 and if the output is something along the lines of
 
-```bash
-Hi _yourUsername_! You've successfully authenticated, but GitHub does not provide shell access
-```
+`Hi _yourUsername_! You've successfully authenticated, but GitHub does not provide shell access`
 
 then you have successfully added you ssh key
 
