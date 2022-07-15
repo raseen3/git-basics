@@ -213,7 +213,7 @@ creates a copy of the current branch and switches to the new branch
 
 merges specified branch into current working branch; assuming you are in the branch that you want to merge into (send all the changes to)
 
-### Other Stuff
+## Other Stuff
 
 - [Git Source Control for the Impatient](https://www.youtube.com/watch?v=BaPexytJFTI&list=PLlcnQQJK8SUgfd_0XGzKveEjDGFbndmWr)
 
